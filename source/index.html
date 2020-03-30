@@ -8,15 +8,7 @@
   <body>
     <header class="page-header">
       <a class="page-header__logo">
-        <svg version="1.0" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="74.426px" height="22.859px" viewBox="0 0 74.426 22.859" enable-background="new 0 0 74.426 22.859" xml:space="preserve">
-          <g>
-            <path fill="#FFFFFF" d="M0,1.449c0-0.708,0.58-1.288,1.256-1.288h7.18c5.087,0,8.436,2.704,8.436,7.147v0.064 c0,4.861-4.057,7.373-8.854,7.373H2.544v6.825c0,0.708-0.58,1.288-1.288,1.288C0.58,22.859,0,22.279,0,21.571V1.449z M8.114,12.428 c3.734,0,6.182-1.996,6.182-4.958V7.405c0-3.22-2.415-4.894-6.054-4.894H2.544v9.917H8.114z"/>
-            <path fill="#FFFFFF" d="M21.729,1.288C21.729,0.58,22.308,0,22.983,0c0.709,0,1.288,0.58,1.288,1.288v20.283 c0,0.708-0.579,1.288-1.288,1.288c-0.676,0-1.255-0.58-1.255-1.288V1.288z"/>
-            <path fill="#FFFFFF" d="M30.87,1.32c0-0.676,0.579-1.256,1.256-1.256h0.354c0.58,0,0.934,0.29,1.288,0.74l13.684,17.45V1.256 C47.451,0.58,47.998,0,48.707,0c0.676,0,1.223,0.58,1.223,1.256v20.348c0,0.676-0.482,1.191-1.158,1.191h-0.129 c-0.548,0-0.934-0.322-1.32-0.772L33.349,4.153v17.45c0,0.676-0.547,1.256-1.255,1.256c-0.677,0-1.224-0.58-1.224-1.256V1.32z"/>
-            <path fill="#FFFFFF" d="M56.3,1.288C56.3,0.58,56.879,0,57.556,0c0.708,0,1.287,0.58,1.287,1.288v12.331L71.689,0.451 C71.979,0.193,72.269,0,72.688,0c0.676,0,1.224,0.612,1.224,1.256c0,0.354-0.161,0.644-0.419,0.901l-7.984,7.92l8.564,10.561 c0.225,0.29,0.354,0.547,0.354,0.934c0,0.676-0.579,1.288-1.287,1.288c-0.483,0-0.806-0.258-1.03-0.58l-8.403-10.463l-4.862,4.861 v4.894c0,0.708-0.579,1.288-1.287,1.288c-0.677,0-1.256-0.58-1.256-1.288V1.288z"/>
-          </g>
-        </svg>
-        <img src="https://via.placeholder.com/150x150">
+        <img class="page-header__logo-image" src="https://via.placeholder.com/150x150" width="75" height="24" alt="Логотип html academy»">
       </a>
       <nav class="main-nav">
         <button class="main-nav__toggle" type="button">
@@ -24,10 +16,10 @@
         </button>
         <div class="main-nav__wrapper">
           <ul class="main-nav__list">
-            <li class="main-nav__item main-nav__item--active"><a>Главная</a></li>
-            <li class="main-nav__item"><a href="photo.html">Фотографии</a></li>
-            <li class="main-nav__item"><a href="form.html">Конкурс</a></li>
-            <li class="main-nav__item"><a href="https://htmlacademy.ru/" target="_blank">HTML Academy</a></li>
+            <li class="main-nav__item main-nav__item--active"><a class="main-nav__link">Главная</a></li>
+            <li class="main-nav__item"><a class="main-nav__link" href="photo.html">Фотографии</a></li>
+            <li class="main-nav__item"><a class="main-nav__link" href="form.html">Конкурс</a></li>
+            <li class="main-nav__item"><a class="main-nav__link" href="https://htmlacademy.ru/" target="_blank">HTML Academy</a></li>
           </ul>
         </div>
       </nav>
@@ -50,17 +42,95 @@
         <p class="advantages__heading heading">Нам есть, что вам предложить</p>
         <ul class="advantages__list">
           <li class="advantages__item">
-            <h2 class="advantages__tittle">Поднимает настроение</h2>
+            <h2 class="advantages__title">Поднимает настроение</h2>
             <p class="advantages__description">Приложение позволит вам победить осеннюю хандру и бессоницу буквально в несколько кликов!</p>
           </li>
           <li class="advantages__item">
-            <h2 class="advantages__tittle">Меняет мир вокруг</h2>
+            <h2 class="advantages__title">Меняет мир вокруг</h2>
             <p class="advantages__description">Сделайте снимок и украсьте его смайликом или текстовой подписью, чтобы усилить эффект</p>
           </li>
           <li class="advantages__item">
-            <h2 class="advantages__tittle">Заводит новых друзей</h2>
+            <h2 class="advantages__title">Заводит новых друзей</h2>
             <p class="advantages__description">Ставьте лайки, комментируйте, делитесь фотграфиями с друзьями и заводите новых</p>
           </li>
         </ul>
-        <img class="advantages__image" src="https://via.placeholder.com/150x150">
+        <img class="advantages__image" src="https://via.placeholder.com/150x150" alt="Придожение Пинк в телефоне">
       </section>
+      <section class="reviews">
+        <div class="reviews__wrapper slider">
+          <h2 class="visually-hidden">Отзывы</h2>
+          <ul class="reviews__list slider__list">
+            <li class="reviews__item slider__item">
+              <p class="reviews__author-name">Николай Петров</p>
+              <p class="reviews__text">«Это приложение перевернуло мой мир и позволило по-повому взглянуть на привычные серые вещи! А еще я познакомися
+              со своей будущей женой в комментариях к выложенной фотографии!»</p>
+            </li>
+            <li class="reviews__item slider__item">
+              <p class="reviews__author-name">Николай Петров</p>
+              <p class="reviews__text">«Это приложение перевернуло мой мир и позволило по-повому взглянуть на привычные серые вещи! А еще я познакомися
+                со своей будущей женой в комментариях к выложенной фотографии!»</p>
+            </li>
+            <li class="reviews__item slider__item">
+              <p class="reviews__author-name">Николай Петров</p>
+              <p class="reviews__text">«Это приложение перевернуло мой мир и позволило по-повому взглянуть на привычные серые вещи! А еще я познакомися
+              со своей будущей женой в комментариях к выложенной фотографии!»</p>
+            </li>
+          </ul>
+          <ul class="reviews__toggles slider__toggles">
+            <li><button class="slider__toggle slider__toggle--active" type="button">Первый слайд с отзывом</button></li>
+            <li><button class="slider__toggle" type="button">Переход к следующему отзыву</button></li>
+            <li><button class="slider__toggle" type="button">Переход к следующему отзыву</button></li>
+          </ul>
+        </div>
+      </section>
+      <section class="rates">
+        <h2 class="visually-hidden">Тарифы</h2>
+        <div class="rates__table-wrapper">
+          <table class="rates-table">
+            <tr>
+              <th class="rates-table__title">
+                <span class="rates-table__rate-name">База</span>
+                <span class="rates-table__price">1,99 USD</span>
+              </th>
+              <th class="rates-table__title rates-table__title--hit">
+                <span class="rates-table__rate-name">Стандарт</span>
+                <span class="rates-table__price">3,99 USD</span>
+              </th>
+              <th class="rates-table__title">
+                <span class="rates-table__rate-name">Анлим</span>
+                <span class="rates-table__price">9,99 USD</span>
+              </th>
+            </tr>
+            <tr>
+              <td class="rates-table__option rates-table__option--yes">Розовый фильтр<span class="visually-hidden">да</span></td>
+              <td class="rates-table__option rates-table__option--yes">Розовый фильтр<span class="visually-hidden">да</span></td>
+              <td class="rates-table__option rates-table__option--yes">Розовый фильтр<span class="visually-hidden">да</span></td>
+            </tr>
+            <tr>
+              <td class="rates-table__option rates-table__option--no">Смайлики<span class="visually-hidden">нет</span></td>
+              <td class="rates-table__option rates-table__option--yes">Смайлики<span class="visually-hidden">да</span></td>
+              <td class="rates-table__option rates-table__option--yes">Смайлики<span class="visually-hidden">да</span></td>
+            </tr>
+            <tr>
+              <td class="rates-table__option rates-table__option--no">Комментарии<span class="visually-hidden">нет</span></td>
+              <td class="rates-table__option rates-table__option--no">Комментарии<span class="visually-hidden">нет</span></td>
+              <td class="rates-table__option rates-table__option--yes">Комментарии<span class="visually-hidden">да</span></td>
+            </tr>
+          </table>
+        </div>
+      </section>
+    </main>
+    <section class="feedback">
+      <h2 class="feedback__heading heading">Остались вопросы? Свяжитесь с нами!</h2>
+      <div class="feedback__contacts contacts">
+        <p class="contacts__title">Звоните!</p>
+        <a class="contacts__phone" href="tel:+78125556666">+7 (812) 555-66-66</a>
+        <p class="contacts__title">Пишите:</p>
+        <a class="contacts__mail" href="mailto:mail@htmlacademy.ru">mail@htmlacademy.ru</a>
+        <p class="contacts__title">Приезжайте в гости:</p>
+        <p class="contacts__text">ул. Большая Конюшенная, 19/8</p>
+      </div>
+      <img src="https://via.placeholder.com/150x150" width="1200" height="430" alt="Адрес офиса: ул. Большая Конюшенная 19/8, Санкт-Петербург">
+    </section>
+  </body>
+</html>
