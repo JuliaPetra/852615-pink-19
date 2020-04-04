@@ -4,13 +4,27 @@
 
 .page-main__slogan {
   color: @dark-blue;
+  background-color: #ffffff;
   font-size: 14px;
   font-weight: 300;
-  width: 280px;
   text-align: center;
   padding-top: 55px;
   padding-bottom: 55px;
   line-height: 1.7;
   outline: 2px solid yellow;
-  margin: 0 auto;
+}
+
+.page-main__wrapper {
+  .wrapper();
+}
+
+.page-main__heading {
+  text-align: center;
+  .light-title();
+  background-color: @bg-color-header;
+  background-image: url("../img/bg-back-mobile@1x.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  //outline: 2px solid blue;
+  color: @white;
 }

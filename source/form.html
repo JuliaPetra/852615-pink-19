@@ -1,40 +1,50 @@
 <!DOCTYPE html>
 <html lang="ru">
-  <head>
-    <meta charset="utf-8">
-    <title>HTML Academy: Пинк</title>
-    <link href="css/style.css" rel="stylesheet">
-  </head>
-  <body>
-    <header class="page-header">
-      <a class="page-header__logo">
-        <img class="page-header__logo-image" src="https://via.placeholder.com/150x150" width="75" height="24" alt="Логотип «Пинк»">
-      </a>
-      <nav class="main-nav">
-        <button class="main-nav__toggle" type="button">
-          <span class="visually-hidden">Показать/скрыть меню</span>
-        </button>
-        <div class="main-nav__wrapper">
-          <ul class="main-nav__list">
-            <li class="main-nav__item"><a class="main-nav__link" href="index.html">Главная</a></li>
-            <li class="main-nav__item"><a class="main-nav__link" href="photo.html">Фотографии</a></li>
-            <li class="main-nav__item main-nav__item--active"><a class="main-nav__link">Конкурс</a></li>
-            <li class="main-nav__item"><a class="main-nav__link" href="https://htmlacademy.ru/" target="_blank">HTML Academy</a></li>
-          </ul>
-        </div>
-      </nav>
-    </header>
-    <main class="page-main">
-      <h1 class="page-main__heading heading">Конкурс на самое безбашенное путешествие с Пинк</h1>
-      <p class="page-main__slogan">Поделитесь своей историей и получите шанс выиграть ценный приз - 1000 миль на вашу бонусную карту!</p>
+
+<head>
+  <meta charset="utf-8">
+  <title>HTML Academy: Пинк</title>
+  <link href="css/style.css" rel="stylesheet">
+</head>
+
+<body>
+  <header class="page-header">
+    </a>
+    <nav class="main-nav">
+      <div class="page-header__wrapper">
+        <a class="page-header__logo">
+          <img class="page-header__logo-image" src="img/logo-pink-white-mobile.svg" width="75" height="24"
+            alt="Логотип html academy»">
+          <button class="main-nav__toggle" type="button">
+            <span class="visually-hidden">Показать/скрыть меню</span>
+          </button>
+      </div>
+      <div class="main-nav__wrapper">
+        <ul class="main-nav__list">
+          <li class="main-nav__item"><a class="main-nav__link" href="index.html">Главная</a></li>
+          <li class="main-nav__item"><a class="main-nav__link" href="photo.html">Фотографии</a></li>
+          <li class="main-nav__item main-nav__item--active"><a class="main-nav__link">Конкурс</a></li>
+          <li class="main-nav__item"><a class="main-nav__link" href="https://htmlacademy.ru/" target="_blank">HTML
+              Academy</a></li>
+        </ul>
+      </div>
+    </nav>
+    <h2 class="page-header__subtitle">Конкурс на самое безбашенное путешествие с Пинк</h2>
+  </header>
+  <main class="page-main">
+    <div class="page-main__wrapper">
+      <p class="page-main__slogan">Поделитесь своей историей и получите шанс выиграть ценный приз - 1000 миль на вашу
+        бонусную карту!</p>
       <form class="form-contest" action="https://echo.htmlacademy.ru" method="post">
         <div class="form-contest__user-name">
           <label class="form-contest__label" for="surname">Фамилия</label>
-          <input class="form-contest__input" type="text" name="surname" id="surname" placeholder="Укажите фамилию*" required>
+          <input class="form-contest__input" type="text" name="surname" id="surname" placeholder="Укажите фамилию*"
+            required>
           <label class="form-contest__label" for="name">Имя</label>
           <input class="form-contest__input" type="text" name="name" id="name" placeholder="Введите ваше имя*" required>
           <label class="form-contest__label" for="patronymic">Отчество</label>
-          <input class="form-contest__input" type="text" name="patronymic" id="patronymic" placeholder="Ну и отчество тоже">
+          <input class="form-contest__input" type="text" name="patronymic" id="patronymic"
+            placeholder="Ну и отчество тоже">
         </div>
         <div class="form-contest__achievements">
           <p class="form-contest__title">Ваши безбашенные достижения в путешествии</p>
@@ -52,51 +62,56 @@
           <label class="form-contest__label" for="hotel">Разгромил отель</label>
         </div>
         <div class="form-contest__user-contacts">
-          <label class="form-contest__label" for="phone" >Номер телефона</label>
+          <label class="form-contest__label" for="phone">Номер телефона</label>
           <input class="form-contest__input" type="tel" name="tel" id="tel" placeholder="Номер, пожалуйста">
-          <label class="form-contest__label" for="email" >Адрес почты</label>
+          <label class="form-contest__label" for="email">Адрес почты</label>
           <input class="form-contest__input" type="email" name="email" id="email" placeholder="Введите почту*" required>
         </div>
         <div class="form-contest__user-apps">
+          <p class="form-contest__title">С каким приложением путешествовали?</p>
           <input class="form-contest__radio-button" type="radio" name="os" id="ios" checked>
-          <label class="form-contest__label" for="ios">Pink для iOS</label>
+          <label class="form-contest__label" for="os">Pink для iOS</label>
           <input class="form-contest__radio-button" type="radio" name="os" id="android">
           <label class="form-contest__label" for="android">Pink на Android</label>
           <input class="form-contest__radio-button" type="radio" name="os" id="win">
           <label class="form-contest__label" for="win">Windows Phone</label>
         </div>
-          <p class="form-contest__title">Опишите свои эмоции</p>
-          <textarea class="form-contest__emotions" type="text" name="emotions" id="emotions" rows="5" placeholder="Можно прям в красках, не стесняясь в выражениях"></textarea>
-        </div>
-        <button class="form-contest__button" type="submit">Отправить форму</button>
-        <p class="form-contest__required">* - обязательные поля</p>
+        <p class="form-contest__title">Опишите свои эмоции</p>
+        <textarea class="form-contest__emotions" type="text" name="emotions" id="emotions" rows="5"
+          placeholder="Можно прям в красках, не стесняясь в выражениях"></textarea>
+    </div>
+    <button class="form-contest__button" type="submit">Отправить форму</button>
+    <p class="form-contest__required">* - обязательные поля</p>
     </form>
-    </main>
-    <footer class="page-footer">
-        <div class="page-footer__wrapper">
-          <a class="page-footer__logo">
-            <img src="https://via.placeholder.com/150x150">
-          </a>
-          <div class="page-footer__social social">
-            <ul class="social__list">
-              <li class="social__item">
-                <a class="social__link social__link--twitter" href="#">Мы в Твиттере</a>
-              </li>
-              <li class="social__item">
-                <a class="social__link social__link--facebook" href="#">Мы в Фейсбуке</a>
-              </li>
-                <li class="social__item">
-                <a class="social__link social__link--youtube" href="#">Мы на YouTube</a>
-              </li>
-            </ul>
-          </div>
-          <div class="page-footer__copyright copyright">
-            <b class="copyright__text">Разработано</b>
-            <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">
-              <img class="copyright__logo-image" src="https://via.placeholder.com/150x150" width="75" height="24" alt="Логотип html academy">
-            </a>
-          </div>
-        </div>
-      </footer>
-  </body>
+    </div>
+  </main>
+  <footer class="page-footer">
+    <div class="page-footer__wrapper">
+      <a class="page-footer__logo">
+        <img src="https://via.placeholder.com/150x150">
+      </a>
+      <div class="page-footer__social social">
+        <ul class="social__list">
+          <li class="social__item">
+            <a class="social__link social__link--twitter" href="#">Мы в Твиттере</a>
+          </li>
+          <li class="social__item">
+            <a class="social__link social__link--facebook" href="#">Мы в Фейсбуке</a>
+          </li>
+          <li class="social__item">
+            <a class="social__link social__link--youtube" href="#">Мы на YouTube</a>
+          </li>
+        </ul>
+      </div>
+      <div class="page-footer__copyright copyright">
+        <b class="copyright__text">Разработано</b>
+        <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">
+          <img class="copyright__logo-image" src="https://via.placeholder.com/150x150" width="75" height="24"
+            alt="Логотип html academy">
+        </a>
+      </div>
+    </div>
+  </footer>
+</body>
+
 </html>
