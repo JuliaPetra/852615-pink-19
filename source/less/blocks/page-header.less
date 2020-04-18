@@ -1,4 +1,6 @@
 .page-header {
+  display: flex;
+  flex-direction: column;
   background-color: @bg-color-header;
   background-image: url("../img/bg-back-mobile@1x.jpg");
   background-repeat: no-repeat;
@@ -9,7 +11,21 @@
 }
 
 .page-header__wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #283645;
+  height: 70px;
   .wrapper();
+}
+
+
+
+
+@media (min-width: @tablet-width) {
+  .page-header__wrapper {
+    height: 109px;
+  }
 }
 
 .page-header__title {
@@ -24,4 +40,12 @@
 .page-header__subtitle {
   .light-title();
   text-align: center;
+}
+
+@media (min-width: @desktop-width) {
+  .page-header__nav {
+    display: flex;
+    justify-content: space-between;
+    height: 109px;
+  }
 }

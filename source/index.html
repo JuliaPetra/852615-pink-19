@@ -5,30 +5,32 @@
   <meta charset="utf-8">
   <title>HTML Academy: Пинк</title>
   <link href="css/style.css" rel="stylesheet">
+  <link href="css/normalize.css" rel="stylesheet">
 </head>
 
 <body>
   <header class="page-header">
-    </a>
-    <nav class="main-nav">
+    <div class="page-header__nav">
       <div class="page-header__wrapper">
         <a class="page-header__logo">
           <img class="page-header__logo-image" src="img/logo-pink-white-mobile.svg" width="75" height="24"
-            alt="Логотип html academy»">
-          <button class="main-nav__toggle" type="button">
-            <span class="visually-hidden">Показать/скрыть меню</span>
-          </button>
+            alt="Логотип html academy»"></a>
+        <button class="page-header__toggle" type="button">
+          <span class="visually-hidden">Показать/скрыть меню</span>
+        </button>
       </div>
-      <div class="main-nav__wrapper">
-        <ul class="main-nav__list">
-          <li class="main-nav__item main-nav__item--active"><a class="main-nav__link">Главная</a></li>
-          <li class="main-nav__item"><a class="main-nav__link" href="photo.html">Фотографии</a></li>
-          <li class="main-nav__item"><a class="main-nav__link" href="form.html">Конкурс</a></li>
-          <li class="main-nav__item"><a class="main-nav__link" href="https://htmlacademy.ru/" target="_blank">HTML
-              Academy</a></li>
-        </ul>
-      </div>
-    </nav>
+      <nav class="main-nav">
+        <div class="main-nav__wrapper">
+          <ul class="main-nav__list">
+            <li class="main-nav__item main-nav__item--active"><a class="main-nav__link">Главная</a></li>
+            <li class="main-nav__item"><a class="main-nav__link" href="photo.html">Фотографии</a></li>
+            <li class="main-nav__item"><a class="main-nav__link" href="form.html">Конкурс</a></li>
+            <li class="main-nav__item"><a class="main-nav__link" href="https://htmlacademy.ru/" target="_blank">HTML
+                Academy</a></li>
+          </ul>
+        </div>
+      </nav>
+    </div>
     <div class="page-header__heading">
       <h1 class="page-header__title">Приложение "Пинк" - взгляните на жизнь иначе!</h1>
       <h2 class="page-header__subtitle">Взгляните на жизнь иначе!</h2>
@@ -54,28 +56,52 @@
   <main class="page-main">
     <section class="advantages">
       <div class="advantages__wrapper">
-        <h2 class="advantages__subtitle">Преимущества приложения</h2>
-        <p class="advantages__heading">Устали от серости мегаполиса?</p>
-        <p class="advantages__heading">Нам есть, что вам предложить</p>
-        <ul class="advantages__list">
-          <li class="advantages__item">
-            <h2 class="advantages__title">Поднимает настроение</h2>
-            <p class="advantages__description">Приложение позволит вам победить осеннюю хандру и бессоницу буквально в
-              несколько кликов!</p>
-          </li>
-          <li class="advantages__item">
-            <h2 class="advantages__title">Меняет мир вокруг</h2>
-            <p class="advantages__description">Сделайте снимок и украсьте его смайликом или текстовой подписью, чтобы
-              усилить эффект</p>
-          </li>
-          <li class="advantages__item">
-            <h2 class="advantages__title">Заводит новых друзей</h2>
-            <p class="advantages__description">Ставьте лайки, комментируйте, делитесь фотграфиями с друзьями и заводите
-              новых</p>
-          </li>
-        </ul>
-        <div class="advantages__picture">
-          <img src="img/iphone-screen-mobile@1x.png" alt="Придожение Пинк в телефоне">
+        <div class="advantages__slogan">
+          <h2 class="advantages__subtitle">Преимущества приложения</h2>
+          <p class="advantages__heading">Устали от серости мегаполиса?</p>
+          <p class="advantages__heading">Нам есть, что вам предложить</p>
+        </div>
+        <div class="advantages__list-wrapper">
+          <div class="advantages__picture--2">
+            <img src="img/iphone-screen-3-tablet@1x.png" alt="Приложение Пинк в телефоне">
+          </div>
+          <ul class="advantages__list">
+            <li class="advantages__item">
+              <div class="advantages__picture--1">
+                <img src="img/iphone-screen-1-desktop@1x.png" alt="Приложение Пинк в телефоне">
+              </div>
+              <h2 class="advantages__title">Поднимает настроение</h2>
+              <p class="advantages__description">Приложение позволит вам победить осеннюю хандру и бессоницу буквально в
+                несколько кликов!</p>
+            </li>
+            <li class="advantages__item">
+              <div class="advantages__picture--1">
+                <img src="img/iphone-screen-2-desktop@1x.png" alt="Приложение Пинк в телефоне">
+              </div>
+              <h2 class="advantages__title">Меняет мир вокруг</h2>
+              <p class="advantages__description">Сделайте снимок и украсьте его смайликом или текстовой подписью, чтобы
+                усилить эффект</p>
+            </li>
+            <li class="advantages__item">
+              <div class="advantages__picture--1">
+                <img src="img/iphone-screen-3-desktop@1x.png" alt="Приложение Пинк в телефоне">
+              </div>
+              <h2 class="advantages__title">Заводит новых друзей</h2>
+              <p class="advantages__description">Ставьте лайки, комментируйте, делитесь фотграфиями с друзьями и
+                заводите
+                новых</p>
+            </li>
+          </ul>
+          <div class="advantages__item advantages__item--24h">
+            <h2 class="advantages__title">Эффект на 24 часа!</h2>
+            <p class="advantages__description">Британские ученые провели исследования и доказали, что положительный
+              эффект от использования приложения
+              длится целые сутки!</p>
+            <a class="advantages__research" href="#">Узнать больше об исследовании</a>
+          </div>
+          <div class="advantages__picture">
+            <img src="img/iphone-screen-mobile@1x.png" alt="Приложение Пинк в телефоне">
+          </div>
         </div>
       </div>
     </section>

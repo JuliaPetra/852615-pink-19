@@ -8,14 +8,30 @@
   text-align: center;
 }
 
-
 .main-nav__link {
   display: block;
-  padding: 20px 0;
   color: #ffffff;
+  padding: 24px 0;
   border-bottom: 1px solid #000000;
   border-top: 1px solid #485461;
   text-transform: uppercase;
   text-decoration: none;
   font-weight: 700;
+  height: 66px;
+}
+
+@media (min-width: @desktop-width) {
+  .main-nav__list {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 110px;
+    width: 800px;
+  }
+  }
+
+.main-nav__wrapper {
+  display: flex;
+  flex-direction: column;
+  min-height: 260px;
 }
