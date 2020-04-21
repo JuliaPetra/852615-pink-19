@@ -17,7 +17,26 @@
 
 @media (min-width: @tablet-width) {
   .contacts {
+    margin: 0 auto;
+    width: 620px;
     display: flex;
     justify-content: center;
+    flex-wrap: wrap;
+    margin-bottom: 20px;
+  }
+
+  .contacts__column {
+    width: 50%;
+  }
+}
+
+@media (min-width: @tablet-width) {
+  .contacts {
+    width: 940px;
+    flex-wrap: nowrap;
+  }
+
+  .contacts__column--mail {
+    order: 2;
   }
 }
